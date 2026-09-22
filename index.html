@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ailey | Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="assets/tab_logo.png" type="img" rel="icon">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="scrollBar" aria-hidden="true"></div>
+
+<header>
+  <nav class="wrap">
+    <a href="#home" class="logo" aria-label="Ailey home">
+      <img id="siteLogo" src="assets/logo_dark.png" alt="Ailey">
+    </a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+      <button id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="home">
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="eyebrow-line"><span class="dot"></span> Currently learning, building, and leveling up</div>
+      <h1>Hi, I'm <em>Shaine Ashley</em></h1>
+      <div class="role-line"><span id="roleText"></span><span class="cursor">|</span></div>
+      <p class="lede">I'm a BSIT student who enjoys building websites and systems from the ground up — from the database behind the scenes to the interface people actually see. I learn best by building, breaking, and fixing things.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="tech-strip reveal stagger">
+        <span class="tech-chip"><span class="sw" style="background:#E9A9C4"></span>HTML5</span>
+        <span class="tech-chip"><span class="sw" style="background:#B79BD1"></span>CSS3</span>
+        <span class="tech-chip"><span class="sw" style="background:#CE9A55"></span>JavaScript</span>
+        <span class="tech-chip"><span class="sw" style="background:#9678B8"></span>PHP</span>
+        <span class="tech-chip"><span class="sw" style="background:#D783A9"></span>MySQL</span>
+        <span class="tech-chip"><span class="sw" style="background:#E9A9C4"></span>Python</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">About</span>
+        <h2>A little about me</h2>
+      </div>
+      <div class="about-grid reveal" data-anim="left">
+        <div class="avatar-wrap">
+          <div class="avatar-blob" aria-hidden="true"></div>
+          <img class="avatar-photo" src="assets/profile.png" alt="Shaine Ashley Catapang">
+          <span class="avatar-role-badge">💻 Front End Developer</span>
+        </div>
+        <div class="about-copy">
+          <p>I'm <strong>Shaine Ashley Catapang</strong>, known to friends as <strong>Ailey</strong> — a BSIT student with a focus on web development.</p>
+          <p>I'm continuously learning how frontend and backend technologies work together, from writing clean HTML and CSS to handling logic in JavaScript, PHP, Python, Java, and C-family languages.</p>
+          <p>I enjoy the process of turning an idea into a working website or system — planning it out, building it piece by piece, and fixing what breaks along the way.</p>
+          <p>My goal is to become a well-rounded developer who can build useful, responsive, and user-friendly systems for school and real clients alike.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" style="background:var(--bg-panel-2);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">What I Do</span>
+        <h2>Where I can help</h2>
+      </div>
+      <div class="service-list reveal stagger">
+        <div class="service-row">
+          <h3>Web Development</h3>
+          <p>Building responsive, functional websites using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="service-row">
+          <h3>System Development</h3>
+          <p>Developing web-based systems with PHP and MySQL for school and organizational needs.</p>
+        </div>
+        <div class="service-row">
+          <h3>Client-Based Projects</h3>
+          <p>Working with clients and students from different schools to turn their ideas into functional web projects.</p>
+        </div>
+        <div class="service-row">
+          <h3>UI/UX & Web Design</h3>
+          <p>Creating clean, modern, and user-friendly interfaces that are easy to navigate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Skills</span>
+        <h2>What I'm working with</h2>
+      </div>
+      <div class="skill-groups reveal stagger">
+        <div class="skill-group">
+          <h3>Frontend Development</h3>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#E9A9C4">HT</span><span class="skill-name">HTML5</span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#B79BD1">CS</span><span class="skill-name">CSS3</span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#CE9A55">JS</span><span class="skill-name">JavaScript</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend & Database</h3>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#9678B8">PH</span><span class="skill-name">PHP</span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#D783A9">DB</span><span class="skill-name">MySQL</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Programming Languages</h3>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#E9A9C4">PY</span><span class="skill-name">Python</span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#B79BD1">JV</span><span class="skill-name">Java</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Also Comfortable With</h3>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#CE9A55">C+</span><span class="skill-name">C++</span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-badge" style="background:#9678B8">C#</span><span class="skill-name">C#</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="background:var(--bg-panel-2);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Projects</span>
+        <h2>Some of my work</h2>
+      </div>
+
+      <div class="project-card reveal" data-anim="left">
+        <div class="project-visual">
+          <img src="assets/ticore.png" alt="Screenshot of the TICORE Barangay Court Reservation System" loading="lazy" onerror="this.parentElement.classList.add('project-media--fallback')">
+          <span class="project-fallback" aria-hidden="true">Project preview unavailable</span>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Featured Project</span>
+          <h3>TICORE — Barangay Court Reservation System</h3>
+          <p>A web-based court reservation system developed for Barangay Timugan, designed to make court scheduling and reservations more organized and convenient. It lets residents view court availability, check schedules, and manage reservation requests through an easy-to-use web interface.</p>
+          <div class="chip-row">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">Node.js</span><span class="chip">React</span>
+          </div>
+          <span class="status-badge">In Development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Education</span>
+        <h2>Where I'm learning</h2>
+      </div>
+      <div class="edu-card reveal" data-anim="scale">
+        <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+        <p class="edu-meta">Laguna State Polytechnic University – Los Baños Campus</p>
+        <p class="edu-note">2024–Present</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-band reveal" data-anim="left">
+        <h2>Let's work together</h2>
+        <p>Open to school systems, web development, and project-based requests. Feel free to reach out — I'd love to hear about what you're building.</p>
+        <p class="contact-location">Based in Calamba City, Laguna</p>
+        <div class="contact-links">
+          <a href="mailto:shnshlyctpng@gmail.com">shnshlyctpng@gmail.com</a>
+          <a href="https://github.com/shnshlyyy" rel="noopener">GitHub</a>
+          <a href="https://www.facebook.com/share/1CSVVuE5n5/?mibextid=wwXIfr" rel="noopener">Facebook</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" data-anim="right" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner wrap">
+    <div class="footer-brand">
+      <a href="#home" class="footer-logo">Ailey.</a>
+      <p>Building thoughtful web experiences, one project at a time.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <span>Explore</span>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-meta">
+      <span>&copy; 2026 Shaine Ashley Catapang</span>
+      <span>Calamba City, Laguna</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
